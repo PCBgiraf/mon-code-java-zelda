@@ -50,7 +50,11 @@ public class RenderEngine extends JPanel implements Engine {
             g.setFont(new Font("Arial", Font.BOLD, 40));
             g.drawString("Welcome to THE LEGEND OF ZELDA", 300, 100); // Titre
             g.setFont(new Font("Arial", Font.BOLD, 25));
-            g.drawString("Créé par Loysel Antoine 1G1TD1TP2", 300, 140); // Titre
+            g.drawString("Créé par Loysel Antoine 1G1TD1TP2", 300, 140);
+            g.setColor(Color.RED);
+            g.setFont(new Font("Arial", Font.BOLD, 25));
+            g.drawString("N'hésitez pas à appuyer sur SHIFT pour courir", 400, 700);
+            g.drawString("La mastersword ne fonctionne pas encore contre les ennemies", 380, 730);
             // BOUTON 1 : DIDACTICIEL (Rectangle de X=300, Y=200, Largeur=200, Hauteur=50)
             g.setColor(Color.DARK_GRAY);
             g.fillRect(300, 200, 200, 50);
