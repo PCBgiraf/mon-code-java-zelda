@@ -41,6 +41,9 @@ public class GameEngine implements Engine, KeyListener {
                 hero.setDirection(Direction.EAST);
                 hero.setWalking(true);
                 break;
+            case KeyEvent.VK_SHIFT:
+                hero.setSpeed(10);
+                break;
             case KeyEvent.VK_SPACE: // dégainer épée
                 /*
                 --- 1. Condition de sécurité : Link doit posséder l'épée ---
@@ -63,7 +66,7 @@ public class GameEngine implements Engine, KeyListener {
                 double gridSize = 48;
 
                 switch (linkDirection) {
-                    case NORTH: // Case AU-DESSUS de Link
+                    case NORTH: // épée case AU-DESSUS de Link
                         swordImage = swordNorth;
                         attackY -= gridSize;
                         break;
@@ -113,6 +116,10 @@ public class GameEngine implements Engine, KeyListener {
             case KeyEvent.VK_RIGHT:
                 hero.setWalking(false);
                 break;
+            case KeyEvent.VK_SHIFT:
+                hero.setSpeed(5);
+                break;
+
         }
     }
 }

@@ -34,6 +34,7 @@ public class DynamicSprite extends SolidSprite {
         this.isWalking = walking;
     }
 
+    public void setSpeed(double speed){this.speed=speed;}
 
     public void moveIfPossible(ArrayList<Sprite> environment) {
         if (isStunned) {
@@ -154,4 +155,5 @@ public class DynamicSprite extends SolidSprite {
 
     public long getLastAttackTime() { return lastAttackTime; }
     public void setLastAttackTime(long lastAttackTime) { this.lastAttackTime = lastAttackTime; }
+
 }

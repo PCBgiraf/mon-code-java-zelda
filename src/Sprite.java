@@ -3,11 +3,11 @@ import java.awt.Image;
 
 public class Sprite implements Displayable {
     // Attributs protégés (pour être accessibles par les classes filles comme SolidSprite)
-    protected Image image;      // L'image visuelle [cite: 487]
-    protected double x;         // Coordonnée horizontale [cite: 488]
-    protected double y;         // Coordonnée verticale [cite: 488]
-    protected double width;     // Largeur [cite: 489]
-    protected double height;    // Hauteur [cite: 489]
+    protected Image image;
+    protected double x;
+    protected double y;
+    protected double width;
+    protected double height;
 
     public double getX() {
         return x;
