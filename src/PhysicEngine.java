@@ -111,9 +111,6 @@ public class PhysicEngine implements Engine {
 
                     // 1. On vérifie si le héros regarde dans la direction de Boo
                     boolean heroLooksAtBoo = false;
-
-                    // On suppose que votre héros a une méthode getDirection()
-                    // (Adaptez les noms Direction.RIGHT, LEFT, etc., selon votre code)
                     if (hero.getDirection() == Direction.EAST && boo.getX() >= hero.getX()) {
                         heroLooksAtBoo = true; // Héros regarde à droite, Boo est à droite
                     }
@@ -177,8 +174,6 @@ public class PhysicEngine implements Engine {
                     playSound("coin_obtention.wav");
                     hero.setCoinScore(hero.getCoinScore() + 1);
                     hero.setLastCoinTime(System.currentTimeMillis());
-
-                    // (ici qu'on va rajouter +1 au score plus tard)
                 }
             }
 // On retire les pièces ramassées pour qu'elles n'existent plus physiquement
